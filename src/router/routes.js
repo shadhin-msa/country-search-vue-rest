@@ -8,6 +8,11 @@ const routes = [
         path: "country",
         component: () => import("pages/CountryDetailsPage.vue"),
       },
+      {
+        path: "/error/:error",
+        component: () => import("pages/ErrorDisplay.vue"),
+        name: "ErrorDisplay",
+      },
     ],
   },
 
